@@ -20,11 +20,11 @@ The application allows users to record daily expenses, categorize them, and view
 - Browser LocalStorage
 
 ## Project Structure
-expense-tracker/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+expense-tracker:-
+. index.html
+. style.css
+. script.js
+. README.md
 
 
 ## How to Run
