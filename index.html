@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Expense Tracker</h1>
+
+    <!-- Expense Input Form -->
+    <form id="expense-form">
+      <input type="text" id="title" placeholder="Expense title" required>
+
+      <input type="number" id="amount" placeholder="Amount" required>
+
+      <select id="category" required>
+        <option value="">Select category</option>
+        <option value="Food">Food</option>
+        <option value="Travel">Travel</option>
+        <option value="Rent">Rent</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <input type="date" id="date" required>
+
+      <button type="submit">Add Expense</button>
+    </form>
+ 
+ <p id="error" style="color: red; margin-bottom: 10px;"></p>
+
+
+    <!-- Controls -->
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search by title">
+
+      <select id="sort">
+        <option value="date">Sort by Date</option>
+        <option value="amount">Sort by Amount</option>
+      </select>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+      <h2>Total Expense: ₹<span id="total">0</span></h2>
+    </div>
+
+  <div class="analytics">
+  <h3>Category-wise Summary</h3>
+  <ul id="category-summary"></ul>
+  </div>
+
+    <!-- Expense List -->
+    <ul id="expense-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
